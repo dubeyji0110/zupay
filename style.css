@@ -1,0 +1,307 @@
+/* Inter font import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Kelly+Slab&display=swap");
+
+:root {
+	--primary-font: "Gilroy", sans-serif;
+	--secondary-font: "Inter", sans-serif;
+	--primary-color: #6947bf;
+	--gray-color: #1e2026;
+	--secondary-yellow: #f9c94e;
+	--secondary-blue: #b4d7f9;
+	--secondary-aqua: #11e4a1;
+	--secondary-orange: #ff5d21;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--gray-color);
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+.page {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	scroll-snap-align: start;
+	border-bottom: 1px solid #cecece;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+}
+
+.page:nth-child(1) {
+	background-image: url("./images/1.png");
+}
+
+.page:nth-child(2) {
+	background-image: url("./images/2.png");
+}
+
+.page:nth-child(4) {
+	background-image: url("./images/4.png");
+	background-position: 100%;
+}
+
+.page:nth-child(5) {
+	background-image: linear-gradient(to bottom, #6732ca, #9776e4);
+}
+
+.page:nth-child(6) {
+	background-image: url("./images/6.png");
+}
+
+.child_1,
+.child_2 {
+	min-width: fit-content;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	left: 78%;
+	transform: translate(-50%, -50%);
+}
+
+.child_1 h3,
+.child_2 h3 {
+	font-family: var(--primary-font);
+	font-size: 3.5rem;
+	text-align: center;
+	margin: 0.25rem 0;
+}
+
+.child_1 .btn,
+.child_4 .btn {
+	background-color: var(--primary-color);
+	display: inline-block;
+	margin: auto;
+	color: white;
+	text-align: center;
+	border-radius: 999px;
+	padding: 1rem 2.5rem;
+	margin-top: 2rem;
+	font-family: var(--secondary-font);
+	font-weight: bold;
+	font-size: 1.5rem;
+	transition: background 200ms ease-in;
+}
+
+.child_1 .btn:hover,
+.child_4 .btn:hover {
+	cursor: pointer;
+	box-shadow: 1px 1px 5px rgba(105, 71, 191, 0.5),
+		-1px -1px 8px rgba(105, 71, 191, 0.5);
+	background-color: #5d33c6;
+}
+
+.child_2 {
+	min-width: 30%;
+	left: 80%;
+	top: 48%;
+}
+
+.child_2 .para1 {
+	margin-top: 1.5rem;
+	padding-left: 2rem;
+}
+
+.child_2 .para1 p {
+	font-family: var(--secondary-font);
+	text-align: center;
+	font-size: 1.5rem;
+	max-width: 100%;
+	font-weight: 500;
+}
+
+.page .child_6 {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+}
+
+.page .child_6 h3 {
+	font-size: 5rem;
+	font-family: var(--primary-font);
+}
+
+.page .upperChild_3 {
+	text-align: center;
+	padding: 2rem;
+	padding-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.page .upperChild_3 h3,
+.page .upperChild_5 h3 {
+	font-family: var(--primary-font);
+	font-size: 3.5rem;
+}
+
+.page .upperChild_3 .para {
+	margin: auto;
+	margin-top: 1rem;
+}
+
+.page .upperChild_3 .para p {
+	font-family: var(--secondary-font);
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+
+.page .lowerChild_3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.page .lowerChild_3 .card {
+	flex: 1;
+	margin: 1rem;
+	background: white;
+	height: 450px;
+	padding: 1rem 1.8rem;
+	position: relative;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15),
+		-1px -1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.page .lowerChild_3 .card:nth-child(1) {
+	background-image: url("./images/3a.webp");
+	background-repeat: no-repeat;
+	background-position: 50% 200%;
+}
+
+.page .lowerChild_3 .card:nth-child(2) {
+	background-image: url("./images/3b.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 120%;
+}
+
+.page .lowerChild_3 .card:nth-child(3) {
+	background-image: url("./images/3c.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+}
+
+.page .lowerChild_3 .card h3 {
+	font-size: 3rem;
+	font-family: "Kelly Slab", cursive;
+	font-weight: 600;
+	text-align: left;
+	color: var(--primary-color);
+}
+
+.page .child_4 {
+	text-align: left;
+	max-width: 50%;
+	padding: 1rem 2rem;
+	position: absolute;
+	top: 50%;
+	left: 29%;
+	transform: translate(-50%, -50%);
+}
+
+.page .child_4 h3 {
+	font-size: 3.5rem;
+	font-family: var(--primary-font);
+}
+
+.page .child_4 p {
+	margin-top: 1rem;
+	font-size: 2rem;
+	font-family: var(--secondary-font);
+}
+
+.page .upperChild_5 {
+	text-align: center;
+	padding: 2rem;
+	padding-bottom: 1rem;
+}
+
+.page .lowerChild_5 {
+	display: grid;
+	grid-gap: 1.2rem;
+	padding: 1.5rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page .upperChild_5 h3 {
+	color: white;
+}
+
+.page .lowerChild_5 .tweet_container {
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15),
+		-1px -1px 8px rgba(0, 0, 0, 0.15);
+	min-height: 250px;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.tweet {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+.tweet .name {
+	display: flex;
+	align-items: center;
+}
+
+.tweet .name .logo img {
+	width: 50px;
+	border-radius: 50%;
+}
+
+.tweet .name .name_real {
+	padding-left: 1rem;
+}
+
+.tweet .name .name_real h3 {
+	font-family: var(--primary-font);
+}
+
+.tweet .name .name_real p {
+	font-family: var(--secondary-font);
+}
+
+.tweet .text {
+	padding-top: 0.5rem;
+	padding-left: 0.5rem;
+	padding-bottom: 0.5rem;
+	border-bottom: 1px solid #bbbbbb;
+}
+
+.tweet .text p:nth-child(1) {
+	font-family: var(--secondary-font);
+	text-align: left;
+	padding-bottom: 0.5rem;
+}
+
+.tweet .text p:nth-child(2) {
+	font-family: var(--primary-font);
+	text-align: left;
+	color: #2a2d35;
+	font-weight: 500;
+}
+
+.tweet .likes {
+	padding: 0.5rem;
+	text-align: left;
+	font-family: var(--primary-font);
+	color: #2a2d35;
+	font-weight: 500;
+}
