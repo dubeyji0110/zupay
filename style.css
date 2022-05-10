@@ -45,6 +45,7 @@
 
 .page:nth-child(2) {
 	background-image: url("./images/2.png");
+	background-position: -40%;
 }
 
 .page:nth-child(4) {
