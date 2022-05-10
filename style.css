@@ -26,6 +26,7 @@
 	scroll-behavior: smooth;
 	overflow: auto;
 	scroll-snap-type: y mandatory;
+	overflow-x: hidden;
 }
 
 .page {
@@ -37,6 +38,7 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: center;
+	overflow: hidden;
 }
 
 .page:nth-child(1) {
